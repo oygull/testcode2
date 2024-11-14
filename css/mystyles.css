@@ -1,5 +1,10 @@
 /* Hero Section */
-
+.hero-wrap {
+  height: 440px; 
+}
+.hero-inner{
+  height: 100%;
+}
 .hero-inner-left{
   width: 50%;
 }
@@ -19,6 +24,7 @@ font-weight: 900;
 font-size: 48px;
 line-height: 60px;
 color: #FFFFFF;
+margin-top: -50px;
 }
 .hero-inner-left h2 span{
   color: #C4DF2B;
@@ -248,7 +254,7 @@ font-size: 14px;
 line-height: 17px;
 color: #F2F2F2;
 border: none;
-margin-top: 25px;
+margin: 25px 4px;
 }
 .choose{
   padding: 60px 0;
@@ -593,6 +599,7 @@ color: #FFFFFF;
 margin-bottom: 0;
 text-align: start;
 }
+
 .accaount-open{
   margin-bottom: 12px;
 padding: 16px;
@@ -609,8 +616,43 @@ text-align: center;
 color: #FFFFFF;
 border: navajowhite;
 }
+.see-more{
+  width: 128px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 10px;
+  height: 38px;
+  background-color: transparent;
+}
+.see-more span{
+  padding-left: 4px;
+}
 
 @media only screen and (max-width: 767px){
+  .hero-wrap{
+    height: auto;
+  }
+  .hero-inner{
+    flex-direction: column !important;
+    height: auto;
+  }
+  .hero-inner-left{
+    width: 100%;
+  }
+  .hero-inner-left h2{
+    font-size: 40px;
+    margin-top: 0;
+  }
+  .hero-inner-right{
+    width: 100%;
+  }
+  .hero-inner-right img{
+    margin: 30px 0;
+    height: 267px;
+    object-fit: cover;
+  }
+
+
   .trusted-inner{
     flex-direction: column !important;
   }
@@ -626,15 +668,18 @@ border: navajowhite;
   }
   .trusted-textBox{
     width: 100%;
-    padding: 0 20px;
+ 
     margin-top: 50px;
   }
   .trusted-innerBox{
     flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
     row-gap: 20px;
+    padding-right: 90px;
   }
   .trusted-item{
-    width: 50%;
+    width: 140px;
   }
   .trusted-awards{
     flex-wrap: wrap;
@@ -653,13 +698,14 @@ border: navajowhite;
     text-align: center;
     font-size: 10px;
   }
+
   .spread-inner{
     display: flex;
     flex-direction: column;
   }
   .spread-imgBox{
     width: 100%;
-    padding: 0 20px;
+   
   }
   .spread-imgBox{
     width: 100%;
@@ -667,11 +713,10 @@ border: navajowhite;
   .spread-textBox{
     width: 100%;
     margin-top: 50px;
-    padding: 0 20px;
   }
   .choose-inner{
     flex-direction: column;
-    padding: 0 20px;
+
   }
   .choose-left{
     width: 100%;
@@ -693,7 +738,7 @@ width: 100%;
   .features{
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    padding-top: 0;
   }
   .feature-textBox{
     width: 100%;
@@ -737,7 +782,6 @@ width: 100%;
   .accaount ul{
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
   }
   .accaount li{
     width: 100%;
@@ -853,7 +897,7 @@ color: rgba(0, 0, 0, 0.65);
 @media only screen and (max-width: 767px){
   .leverage-inner{
     flex-direction: column;
-    padding: 30px 20px 0 20px;
+    padding: 30px 0 0 0;
   }
   .leverage-textBox{
     width: 100%;
@@ -862,7 +906,5 @@ color: rgba(0, 0, 0, 0.65);
     width: 100%;
     margin-bottom: 30px;
   }
-  .leverage{
-    padding: 0 20px;
-  }
+
 }

@@ -1060,7 +1060,7 @@ header .main-header {
   background-color: var(--secondary-color-90);
 }
 header .main-header .site-logo {
-  height: 28px;
+  height: 24px;
 }
 header .main-header .site-name {
   font-size: 20px;
@@ -1297,7 +1297,7 @@ footer * {
   color: var(--secondary-font-color-75);
 }
 footer .logo-area .site-logo {
-  height: 40.19px;
+  height: 28px;
 }
 footer .logo-area .site-name {
   font-size: 26px;
@@ -1353,6 +1353,7 @@ footer .footer-nav dl dt:first-child {
 }
 footer .footer-text {
   margin-top: 20px;
+  font-size: 12px;
 }
 
 [mode=dark] footer {
