@@ -786,6 +786,13 @@ width: 100%;
   .accaount li{
     width: 100%;
   }
+  footer dt {
+    width: 100%;
+    text-align: start !important;
+  }
+  footer .text-end{
+    text-align: start !important;
+  }
  
 }
 .hero-section-main-area .content-area .title span{
